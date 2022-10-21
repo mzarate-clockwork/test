@@ -1,0 +1,14 @@
+name: Test
+
+on:
+  release:
+    types: [prereleased]
+
+jobs:
+  build:
+    name: Release
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+
+      
